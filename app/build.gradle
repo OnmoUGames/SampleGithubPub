@@ -11,9 +11,24 @@ android {
         minSdk 21
         targetSdk 32
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file('onmobile_android_keystore')
+            storePassword 'onmobile'
+            keyAlias 'onmobiloid'
+            keyPassword 'onmobile'
+        }
+
+        debug {
+            storeFile file("onmobile_android_keystore")
+            storePassword 'onmobile'
+            keyAlias 'onmobiloid'
+            keyPassword 'onmobile'
+        }
     }
 
     buildTypes {
