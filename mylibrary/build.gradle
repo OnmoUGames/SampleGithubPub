@@ -10,7 +10,7 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 32
-
+        versionName "1.0.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -39,11 +39,11 @@ githubProperties.load(new FileInputStream(rootProject.file("github.properties"))
 
 
 def getVersionName = { ->
-    return "1.0.0" // Replace with version Name
+    return "1.0.1" // Replace with version Name
 }
 
 def getArtificatId = { ->
-    return "samplegit-android-lib" // Replace with library name ID
+    return "gamely-android-lib" // Replace with library name ID
 }
 
 publishing {
